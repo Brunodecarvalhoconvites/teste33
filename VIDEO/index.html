@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo de Bruno de Carvalho Produções</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 177.77%; /* 9:16 aspect ratio */
+        }
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.1); /* Cor branca com 10% de transparência */
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px; /* Tamanho do texto reduzido */
+        }
+        .footer a {
+            color: white;
+            text-decoration: underline; /* Adiciona sublinhado */
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        .footer a:hover {
+            color: #ff9800; /* Cor de destaque */
+        }
+        .footer a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        .footer a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video class="video" controls poster="video/capa.png">
+            <source src="video/video.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <div class="footer">
+        Bruno de Carvalho Produções | <a href="https://wa.me/5516993193429?text=Gostaria%20de%20saber%20mais%20sobre%20o%20convite" target="_blank">Saiba Mais</a>
+    </div>
+</body>
+</html>
